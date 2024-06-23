@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<link href="assets/images/favicon.png" rel="icon" />
+<title>Documentation | CLS</title>
+<meta name="description" content="Your ThemeForest item Name and description">
+<meta name="author" content="harnishdesign.net">
+
+<!-- Stylesheet
+============================== -->
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+<!-- Magnific Popup -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+<!-- Highlight Syntax -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+<!-- Custom Stylesheet -->
+<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+<!-- Embed MD -->
+<script src="https://cdn.rawgit.com/webcomponents/webcomponentsjs/v0.7.15/webcomponents-lite.min.js"></script>
+<link rel="import" href="https://cdn.rawgit.com/zerodevx/zero-md/v0.2.0/build/zero-md.html">
+<link rel="stylesheet" href="https://cdn.rawgit.com/zerodevx/zero-md/v0.2.0/markdown-themes/default.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/zerodevx/zero-md/v0.2.0/highlight-themes/default.css">
+
+</head>
+
+<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+<!-- Preloader -->
+<div class="preloader">
+  <div class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<!-- Preloader End --> 
+<style>
+      /* Edit your header styles here */
+      
+      .md-html { width: auto; margin: 56px auto 0 auto; padding: 0px; }
+    </style>
+<!-- Document Wrapper   
+=============================== -->
+<div id="main-wrapper"> 
+  
+  <!-- Header
+  ============================ -->
+  <header id="header" class="sticky-top"> 
+    <!-- Navbar -->
+    <nav class="primary-menu navbar navbar-expand-lg bg-dark navbar-text-light navbar-dropdown-dark border-0">
+      <div class="container-fluid">
+        <!-- Sidebar Toggler -->
+		<button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span class="w-75"></span><span class="w-50"></span></button>
+		
+		<!-- Logo --> 
+        <a class="logo ml-md-3" href="index.html" title="iDocs Template"> <img src="assets/img/logo.png" alt="iDocs Template"/> </a> 
+		<span class="text-2 text-light ml-2">v1.0</span> 
+        <!-- Logo End -->
+        
+		<!-- Navbar Toggler -->
+		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav"><span></span><span></span><span></span></button>
+        
+		<div id="header-nav" class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+            <li class="dropdown"> <a class="dropdown-toggle" href="#">Dropdown</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Dropdown Action</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="index.html">Action</a></li>
+                    <li><a class="dropdown-item" href="feature-header-dark.html">Another Action</a></li>
+                    <li><a class="dropdown-item" href="feature-header-primary.html">Something Else Here</a></li>
+                    <li><a class="dropdown-item" href="index-2.html">Another Link</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="#">Another Action</a>
+                <li><a class="dropdown-item" href="#">Something Else Here</a></li>
+              </ul>
+            </li>
+            <li><a target="_blank" href="https://themeforest.net/user/harnishdesign/portfolio?ref=HarnishDesign">Other Template</a></li>
+            <li><a target="_blank" href="https://themeforest.net/user/harnishdesign/#contact?ref=HarnishDesign">Support</a></li>
+          </ul>
+        </div>
+        <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
+          <li class="social-icons-twitter"><a data-toggle="tooltip" href="http://www.twitter.com/harnishdesign/" target="_blank" title="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
+          <li class="social-icons-facebook"><a data-toggle="tooltip" href="http://www.facebook.com/harnishdesign/" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="social-icons-dribbble"><a data-toggle="tooltip" href="http://www.dribbble.com/harnishdesign/" target="_blank" title="" data-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Navbar End --> 
+  </header>
+  <!-- Header End --> 
+  
+  <!-- Content
+  ============================ -->
+  <div id="content" role="main">
+    
+	<!-- Sidebar Navigation
+	============================ -->
+	<div class="idocs-navigation bg-light">
+      <ul class="nav flex-column ">
+        <li class="nav-item"><a class="nav-link active" href="#idocs_start">Getting Started</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#idocs_usage">Using the docs</a></li>
+          </ul>
+        </li>
+       <li class="nav-item"><a class="nav-link" href="#add-rm-users">Add/Remove Users to CLS</a>
+			<ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#domain_group">Domain Group</a></li>
+            <li class="nav-item"><a class="nav-link" href="#update_group">Update Users</a></li>
+          </ul>		  
+		</li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_content">Reset Password</a>
+			<ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#idocs_typography">New Password</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_code">CLS Access</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_table">Update Pass on Windows</a></li>
+			<li class="nav-item"><a class="nav-link" href="#idocs_driveclient">Update Pass on Drive Client</a></li>
+			<li class="nav-item"><a class="nav-link" href="#idocs_icons">Password Lockout</a></li>
+          </ul>
+		</li>	
+		<li class="nav-item"><a class="nav-link" href="#data-storage">Data Storage</a>
+			<ul class="nav flex-column">
+			<li class="nav-item"><a class="nav-link" href="#">item 1</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">item 2</a></li>
+			</ul>
+		</li>	
+		<li class="nav-item"><a class="nav-link" href="#ordering">Ordering System</a>
+			<ul class="nav flex-column">
+			<li class="nav-item"><a class="nav-link" href="#og">Ordering Guidelines</a></li>
+			<li class="nav-item"><a class="nav-link" href="#sciware">Science Warehouse</a></li>
+			<li class="nav-item"><a class="nav-link" href="#noncat">Non-Catalogue Request</a></li>
+			<li class="nav-item"><a class="nav-link" href="#reps">Rep Contact Info</a></li>
+			<li class="nav-item"><a class="nav-link" href="#iexpenses">iExpenses</a></li>
+			</ul>
+		</li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_components">GBM Inventory</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#access-restrictions">Access Restrictions</a></li>
+            <li class="nav-item"><a class="nav-link" href="#logging-in-to-the-app">Logging in</a></li>
+            <li class="nav-item"><a class="nav-link" href="#adding-patient-records">Add Patient</a></li>
+			<li class="nav-item"><a class="nav-link" href="#adding-surgery-details">Add Surgery</a></li>
+			<li class="nav-item"><a class="nav-link" href="#adding-containers">Add Containers</a></li>
+			<li class="nav-item"><a class="nav-link" href="#adding-tubes">Add Tubes</a></li>			
+			<li class="nav-item"><a class="nav-link" href="#checking-tubes-in-and-out">Checking tubes in and out</a></li>
+			<li class="nav-item"><a class="nav-link" href="#viewing-database-tables">Viewing Database Tables</a></li>
+			<li class="nav-item"><a class="nav-link" href="#withdrawal-requests">Withdrawal Requests</a></li>
+			<li class="nav-item"><a class="nav-link" href="#data-destruction">Data Destruction</a></li>
+          </ul>
+        </li>
+		<li class="nav-item">
+    		<a class="nav-link" href="#idocs_seqworks">SeqWorks</a>
+			<ul class="nav flex-column">
+				<li class="nav-item"><a class="nav-link" href="#idocs_bulk">Bulk RNAseq</a></li>
+				<li class="nav-item"><a class="nav-link" href="#idocs_sc">Single cell RNAseq</a></li>
+			</ul>
+		</li>
+		
+		<li class="nav-item"><a class="nav-link" href="#idocs_changelog">Changelog</a>
+			<ul class="nav flex-column">
+			<li class="nav-item"><a class="nav-link" href="#v1-2">v1.2</a></li>
+            <li class="nav-item"><a class="nav-link" href="#v1-1">v1.1</a></li>
+            <li class="nav-item"><a class="nav-link" href="#v1-0">v1.0</a></li>
+          </ul>
+		</li>
+      </ul>
+    </div>
+    
+    <!-- Docs Content
+	============================ -->
+    <div class="idocs-content">
+      <div class="container"> 
+        
+        <!-- Getting Started
+		============================ -->
+        <section id="idocs_start">
+        <h1>Documentation</h1>
+        <h2>Campbell Lab Services </h2>
+        <p class="lead">A repository of how-to's and what to-do's</p>
+		<hr>
+		<div class="row">
+			<div class="col-sm-6 col-lg-4">
+				<ul class="list-unstyled">
+					<li><strong>Version:</strong> 1.0</li>
+					<li><strong>Author:</strong> Jeffrey O'Callaghan</li>
+				</ul>
+			</div>
+			<div class="col-sm-6 col-lg-4">
+				<ul class="list-unstyled">
+					<li><strong class="font-weight-700">Created:</strong> 10 May, 2023</li>
+					<li><strong>Update:</strong> 18 May, 2023</li>
+				</ul>
+			</div>
+		</div>
+        <p class="alert alert-info">If you have any questions that are beyond the scope of the documentation, Please feel free to <a target="_blank" href="/index.html#contact">contact via email</a>.</p>
+        </section>
+        
+		<hr class="divider">
+		
+        <!-- Using the Docs
+		============================ -->
+        <section id="idocs_usage">
+          <h2>Using the Docs</h2>
+          <p class="lead">Follow the steps below to navigate the CLS documentation:</p>
+          <ol>
+            <li>Use the sidebar on the left to select a topic</li>
+            <li>[Optional] Sub-topics will be populated and can be selected.</li>
+			<li>When a selection is made you will be automatically brought to the corresponding section</li>
+            <li>Enjoy the read!</li>
+          </ol>
+        </section>
+        
+		<hr class="divider">
+	
+	
+		<!-- Add / Remove Users to CLS
+		============================ -->
+        <section id="add-rm-users">
+          <h2>Add or Remove Users to CLS</h2>
+          <p class="lead mb-5">How to give a new lab member access to Campbell Lab Services or remove old users</p>
+        </section>
+		
+		<!-- Domain Group
+		============================ -->
+        <section id="domain_group">
+          <h2>Domain Group</h2>
+          <p class="text-4">What is a domain group? A domain group is a group of usernames that has access to specific servers or resources. The domain group set up for the lab is called <strong>NAS-Campbell-Lab</strong>. Access to CLS is granted for users on this list.</p>
+		  <p class="text-4">The group currently contains the following users:
+		  <ul>
+            <li>Campbem2</li>
+			<li>natalie.hudson
+			<li>greenech</li>
+			<li>greenec9</li>
+			<li>hashimoy</li>
+			<li>delanec9</li>
+			<li>delanc10</li>
+			<li>ocallaje</li>
+			<li>jeocalla</li>
+			<li>oconnc43</li>
+			<li>nihanley</li>
+			<li>reddyav</li>
+			<li>byrnek18</li>
+			<li>jhenders</li>
+			<li>AMCGLINC</li>
+			<li>hanleyn3</li>
+          </ul>
+        </section>
+	
+		<hr class="divider">
+	
+		<!-- Update Group
+		============================ -->
+        <section id="update_group">
+          <h2>How to Update the User List</h2>
+          <p class="text-4">The ability to update the user list is controlled by TCD IT Services, so we can not directly edit this ourselves. A request needs to be sent to IT Services who will update the for us. IT requests can be sent via <a href="https://ask.tcd.ie"><strong>ask.tcd.ie</strong></a>. </p>
+		  <p class="text-4">Once logged in you can click <strong>"ask a question"</strong> and then click <strong>"Log Enquiry"</strong>.</p> 
+		  <p class="text-4">Select <strong>IT Services Issue</strong> as the category so it gets to the correct department. You can use the following template to fill out the message box</p>
+		  <p class="text-4"><strong>Subject: </strong> Domain Group Update</p>
+		  <p class="text-4"><strong>Message: </strong> Hi, <br>Could I update the domain group called "NAS-Campbell-Lab" please?<br>I want to add <br>jhenders<br>amcglinc<br><br>and remove<br>hardfordd<br><br>Thanks very much!<br>"your name here"<br></p>
+		  
+		  <p class="text-4">IT will respond in a day or so and then the new user will be able to log in!</p>
+        </section>
+		
+		<hr class="divider">
+		
+		
+		<!-- Reset Password
+		============================ -->
+        <section id="idocs_content">
+          <h2>Reset Password</h2>
+          <p class="lead mb-5">The following section details how to reset your TCD password and renew access to TCD and CLS services</p>
+        </section>
+		  
+		<!-- New Password
+		============================ -->
+		<section id="idocs_typography">
+		  <h3>New Password</h3>
+		  <p class="text-4">TCD requires changing your password every 180 days for security reasons. You will receive an email when your password is due to be changed. To do so, you can visit the following link at <a href="https://password.tcd.ie"><strong>password.tcd.ie</strong></a>. This will allow you to:</p>
+		  <ol>
+            <li>Change your password if you know your current password or if it has expired</li>
+            <li>Reset your password if you forget it</li>
+			<li>Unlock your account</li>
+          </ol>
+		  <p class="text-4">Further details can be found on the TCD website<a href="https://www.tcd.ie/itservices/accounts/kb/password-manager-overview/"> here</a>.
+		  
+		</section>
+		
+		<hr class="divider">
+		
+		<!-- CLS Access
+		============================ -->
+		<section id="idocs_code">
+		  <h2>CLS Access</h2>
+		  <p class="text-4">Your TCD password governs access to Campbell Lab Services including data storage, apps and other cloud services. When you change your TCD password you will be able to use this new password for everything including CLS going forward. There <em>shouldn't</em> be a waiting period between changing your password and using any CLS services. </p>
+		  <p class="text-4">You will however have to manually update your password if you have automatic connections to the server either via windows or the drive client app. Read on for details</p>
+		</section>
+		
+		<hr class="divider">
+		
+		<!-- Update windows
+		============================ -->
+		<section id="idocs_table">
+		<h2>Update Password on Windows</h2>
+		<p class="text-4">If you access server storage locations from your PC using a "network location", you will have to update your windows settings with your new password. A network location looks like this: </p>
+		<p><img src="assets/images/docs/networkloc.JPG" class="img-fluid" alt="Responsive image"></p>
+		<p class="text-4"> To change your password for all of these types of folders, do the following:
+		 <ol>
+            <li>Click <strong>"Start"</strong></li>
+            <li>Type "Credential Manager" and open the program</li>
+			<li>Click on <strong>Windows Credentials</strong></li>
+			<li>Click on the credential you want to change. For example, the Campbell Lab Server could be listed as either <strong>gen003024</strong> or <strong>134.226.153.2</strong>.</li>
+			<li>Click on <strong>Edit</strong></li>
+			<li>Enter your new password in the password field</li>
+			<li>Repeat for any other server connections you may have</li>
+          </ol>
+		</p>
+			</section>
+		
+		<hr class="divider">
+		
+		<!-- Update Drive Client
+		============================ -->
+		<section id="idocs_driveclient">
+		<h2>Update Password on Drive Client</h2>
+		<p class="text-4">If you access server storage locations from your PC using Synology Drive Client, you will have to update your connection settings with your new password. Drive client connections look like this: </p>
+		<p><img src="assets/images/docs/driveclient.JPG" class="img-fluid" alt="Responsive image"></p>
+		<p class="text-4"> To change your password for this type of connection, do the following:
+		 <ol>
+            <li>Click <strong>"Start"</strong></li>
+            <li>Type "Synology Drive Client" and open the program</li>
+			<li>Click on the server connection you want to edit e.g. <strong>Campbell Lab</strong>. (click the server icon. not any subfolder icons)</li>
+			<li>Click <strong>Edit Connection</strong> at the top.</li>
+			<li>Enter your new password in the password field</li>
+			<li>Click <strong>OK</strong>
+			<li>Repeat for any other server connections you may have</li>
+          </ol>
+		</p>
+			</section>
+		
+		<hr class="divider">
+		
+		<!-- Password Lockout
+		============================ -->
+        <section id="idocs_icons">
+          <h2>Password Lockout</h2>
+		  <p class="text-4">Occasionally when a password is changed, your account can get locked. This can happen if you try to access a service using the wrong password too many times. For us, this is usually if you have a server connection that is trying to connect using your old password. To fix this issue, manually update your new password as described above for <a href="#idocs_table">Windows</a> or <a href="#idocs_driveclient">Drive Client</a> connections. Then, unlock your account by visiting <a href="https://password.tcd.ie"><strong>password.tcd.ie</strong></a>, enter your username and click <strong>Unlock My Account</strong>.</p>
+		  <p class="alert alert-info mb-5"> Note: you will have to set up recovery questions if you have not done so already to access this feature.</p>
+         </section>
+		
+		<hr class="divider">
+		
+		
+		<!-- Data Storage
+		============================ -->
+        <section id="data-storage">
+          <h2>Lab Data Storage</h2>
+		  <p class="lead mb-5"> Coming soon! </p>
+		 
+		</section>
+		<hr class="divider">
+
+		<!-- Ordering
+		============================ -->
+		<section id="ordering"></section>
+        <section id="og">
+			<h2>Ordering System</h2>
+			<h3>Ordering Guidelines</h3>
+			<p><u>If you notice any item is low in stock</u></p>
+			<ol>
+				<li>Write it on the whiteboard on the freezer in the main lab.</li>
+				<li>Put it in the science warehouse basket or ask for a quote</li>
+				<li>Put the details on the excel sheet</li>
+			</ol>
+
+			<p><u>If ordering general consumables</u> (plastic wear or anything on the stock check sheet on
+				fridge):</p>
+			<ol>
+				<li>Open the Order sheet <b>Excel file</b> found in the <b>MC Group Share Dropbox</b> or on the server</li>
+				<li>Search for the last time that item has been order and find the <b>catalogue number</b></li>
+				<li>Enter this number into science warehouse and <b>add the item to the basket</b> with the
+					required quantity.</li>
+					<li>Return to the order sheet and <b>input the details</b> (name, supplier, cat code, price per
+						item, quantity)</li>
+			</ol>
+		</section>
+			<hr class="divider">
+
+		<section id="sciware">
+			<h3>Science Warehouse</h3>
+			<p>Log in to sciware here <a href="https://www.oneadvanced.com/science-warehouse/">Science Warehouse</a> and use your personal account to log in</p>
+			<p>Processing a Science Warehouse Basket</p>
+			<ol>
+				<li>Ask for the grant and the code to be charged.</li>
+				<li>Open Science warehouse basket and add current basket to a saved basket</li>
+				<li>Create a new saved basket and put your name, lab and the grant code in the name
+					section, e.g. <b>Avril-MC-123456</b></li>
+				<li>Go to the saved basket, check items are correct then press "share basket" and add
+					<ol type="a">
+						<li>Sullivan, Rachel</li>
+						<li>Campbell, Philip</li>
+						<li>Campbell, Brenda</li>
+					</ol></li>
+				<li>Make sure all items have been added to the excel sheet (this cannot be done later as
+					once processed, the saved basket disappears).</li>
+				<li>Put your name, the date and the grant used in the excel sheet.</li>
+				<li>In science warehouse, remove the items from the general basket (not the saved
+					basket) to avoid them being ordered again</li>
+				<li>When the order is confirmed, you may receive an email from the company with the
+					PO number. Enter this into the excel sheet beside the other details.</li>
+				<li>When the order is delivered, check storage instructions on the product information
+					sheet (found with order or online) and put away. Add in the date the item was
+					delivered to the excel sheet.</li>
+			</ol>
+		</section>
+		  <hr class="divider">
+
+		<section id="noncat">
+		  <h3>Non-Catalogue Requests</h3>
+		  <p>If an item is not on science warehouse, you will need to ask for a quote. This will generally apply for rarely ordered items such as AquaPolymount or Abcam
+			antibodies or maybe for specialist items you need for your project.</p>
+			<ol>
+				<li>Email the rep for the company and give them the catalogue code, name and quantity
+					of the item you want to order and ask for a quote. In this email, also ask if there is a
+					delivery fee and if they can provide a discount (sometimes will for Trinity etc).</li>
+				<li>When they respond, you fill out a non-cat form with the quote number, grant code,
+					item name, quantity and price and delivery fee.</li>
+				<li>Send the original quote and the non-cat form to <b>genorder@tcd.ie</b> and ask them to
+					generate a PO with the grant code you give them. It is a good idea to ask them (ie
+					Philip or Rachel usually) to send you the PO when complete so you can add this to
+					the excel sheet as well (fill out the same as above).</li>
+			</ol>
+
+		</section>
+		  <hr class="divider">
+
+		<section id="reps">
+		<h3>Rep Contact Info</h3> <br>
+		<table class="table table-bordered">
+			<thead>
+			  <tr>
+				<th>Company</th>
+				<th>Rep Name</th>
+				<th>Email Address</th>
+			  </tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>Analab/SLS</td>
+				<td>Gemma Reid</td>
+				<td>gemma@analab.ie</td>
+			</tr>
+			<tr>
+			  <td>Abcam</td>
+			  <td>Matthew Davitt</td>
+			  <td>Matthew.Davitt@abcam.com</td>
+			</tr>
+			<tr>
+				<td>Assay Genie</td>
+				<td>Emer O’Shea</td>
+				<td>emer.oshea@assaygenie.com</td>
+			</tr>
+			<tr>
+				<td>Assay Genie</td>
+				<td>Shane Costigan</td>
+				<td>shane@assaygenie.com</td>
+			</tr>
+			<tr>
+				<td>Codex</td>
+				<td>Philip Curry</td>
+				<td>Curry@codexltd.com</td>
+			</tr>
+			<tr>
+				<td>Invivogen</td>
+				<td>Benjamin Rauwel</td>
+				<td>b.rauwel@invivogen.com</td>
+			</tr>
+			<tr>
+				<td>Fujifilm</td>
+				<td>Ellen Sandom</td>
+				<td>ellen.sandom@fujifilm.com</td>
+			</tr>
+			<tr>
+				<td>Stemcell</td>
+				<td>Laura Woods</td>
+				<td>laura.woods@stemcell.com</td>
+			</tr>
+			<tr>
+				<td>Genscript</td>
+				<td>Libby Naylor</td>
+				<td>Libby.Naylor@genscript.com</td>
+			</tr>
+			<tr>
+				<td>Bio-Techne</td>
+				<td>Lauren Styles</td>
+				<td>Lauren.Styles@bio-techne.com</td>
+			</tr>
+			<tr>
+				<td>Labplan</td>
+				<td>Ben Mantle</td>
+				<td>bmantle@labplan.ie</td>
+			</tr>
+			<tr>
+				<td>Thermo</td>
+				<td>Jane Fitzgerald</td>
+				<td>jane.fitzgerald@thermofisher.com</td>
+			</tr>
+			<tr>
+				<td>SignanGen</td>
+				<td>Jeffrey / Alex</td>
+				<td>info@signagen.com</td>
+			</tr>
+			<tr>
+				<td>ATUM</td>
+				<td>Brett Levay-Young</td>
+				<td>blevayyoung@atum.bio</td>
+			</tr>
+			<tr>
+				<td>Agilent</td>
+				<td>David Sheehan</td>
+				<td>david.sheehan@agilent.com</td>
+			</tr>
+			<tr>
+				<td>Promega</td>
+				<td>Jack McConnell</td>
+				<td><a href="mailto:jack.mcconnell@promega.com">jack.mcconnell@promega.com</a><br /><strong>M:</strong>&nbsp;+44 (0) 7425 287 367</td>
+			  </tr>
+			  <tr>
+				<td>Merck</td>
+				<td>Jason Kane</td>
+				<td>jason.kane@merckgroup.com</td>
+			  </tr>
+			  <tr>
+				<td>Wako Chemicals (for iba1 antibody etc)</td>
+				<td>Michael Liebers</td>
+				<td>michael.liebers@fujifilm.com</td>
+			  </tr>
+			  <tr>
+				<td>Abcam</td>
+				<td>Tomas Rodriquez</td>
+				<td>Tomas Rodriquez Tomas.Rodriquez@abcam.com</td>
+			  </tr>
+			  <tr>
+				<td>Envigo (for animal diet)</td>
+				<td>Laurie Day/ Caroline James</td>
+				<td><a href="mailto:laurie.day@inotivco.com">laurie.day@inotivco.com</a><br />Caroline James caroline.james@inotivco.com</td>
+			  </tr>
+			  <tr>
+				<td>Miltenyi Biotec</td>
+				<td>Ryan Kettle</td>
+				<td>ryank@miltenyi.com</td>
+			  </tr>
+			  <tr>
+				<td>Sarstedt</td>
+				<td></td>
+				<td><a href="mailto:info.ie@sarstedt.com">info.ie@sarstedt.com</a></td>
+			  </tr>
+			  <tr>
+				<td>Zeiss</td>
+				<td>Matthew Haley (Account manager)<br />Mark Forrest (Engineer)<br />Chris Hudson (training)</td>
+				<td><a href="mailto:customercare.uk@zeiss.com">customercare.uk@zeiss.com</a><br />matthew.haley@zeiss.com<br />mark.forrest@zeiss.com<br />chris.hudson@zeiss.com</td>
+			  </tr>
+			  <tr>
+				<td>Phoenix Micron</td>
+				<td>Tyler Barrett (Customer Support Specialist)</td>
+				<td>support@phoenixmicroninc.zohodesk.com</td>
+			  </tr>
+			  <tr>
+				<td>Brennan and Co (supply NEB reagents)</td>
+				<td>Cian Hickey</td>
+				<td>chickey@brennanco.ie</td>
+			  </tr>
+			</tbody>
+		  </table>
+
+		</section>
+		<hr class="divider">
+
+		<section id="iexpenses">
+			<h3>iExpenses</h3> <br>
+			<p>Click <a href = "https://fis-oci.tcd.ie/"><strong>here</strong></a> to access FIS iExpenses platform. Note, you need to be approved for access to FIS to do your own expenses. Access forms are located <a href = "https://www.tcd.ie/financial-services/fis/fis_access_forms.php">here</a> but consult the prep room first.</p>
+	
+			</section>
+			<hr class="divider">
+		
+        <!-- GBM Inventory
+		============================ -->
+        <section id="idocs_components">		 
+		  <zero-md id = "testid" text= "">
+			<div class="md-html"></div>
+		  </zero-md>		 
+        </section>
+        
+		<hr class="divider">
+	
+		
+		<!-- RNAseq
+		============================ -->
+        <section id="idocs_seqworks">
+			<h2> SeqWorks</h2>
+			<zero-md id = "md_seqworks" text= "">
+				<div class="md-html"></div>
+			</zero-md>
+			
+			<section id = "idocs_bulk">
+				<h3>Campbell Lab Bulk NF-RNAseq pipeline</h3>
+				<zero-md id = "md_bulk" text= "">
+					<div class="md-html"></div>
+				</zero-md>
+			</section>
+
+			<section id = "idocs_sc">
+				<h3>Campbell Lab Single Cell RNAseq pipeline</h3>
+				<zero-md id = "md_sc" text= "">
+					<div class="md-html"></div>
+				</zero-md>
+			</section>
+          
+		  
+		<hr class="divider">
+		
+        <!-- Changelog
+		============================ -->
+		
+        <section id="idocs_changelog">
+          <h2>Changelog</h2>
+          <p class="text-4">See what's new added, changed, fixed, improved or updated in the latest versions. </p>
+		  <p class="alert alert-info mb-5"> Get in touch if any docs require updates!</p>
+          
+		  <h3 id="v1-2">Version 1.2 <small class="text-muted">(10 Nov, 2023)</small></h3>
+          <ul class="changelog">
+            <li><span class="badge badge-info">Added</span> Ordering System </li>
+          </ul>
+		  
+		  <hr class="divider">
+
+		  <h3 id="v1-1">Version 1.1 <small class="text-muted">(18 May, 2023)</small></h3>
+          <ul class="changelog">
+            <li><span class="badge badge-success">Updated</span> RNAseq</li>
+            <li><span class="badge badge-danger">Fixed</span> GBM_inventory</li>
+            <li><span class="badge badge-info">Added</span> Passwords </li>
+			<li><span class="badge badge-info">Added</span> CLS Domain Group </li>
+          </ul>
+		  
+		  <hr class="divider">
+		  
+          <h3 id="v1-0">Version 1.0 <small class="text-muted">(10 May, 2023)</small></h3>
+          <p>Initial Release</p>
+        </section>        
+        
+      </div>
+    </div>
+	
+  </div>
+  <!-- Content end --> 
+  
+  <!-- Footer
+  ============================ -->
+  <footer id="footer" class="section bg-dark footer-text-light">
+    <div class="container">
+      <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3">
+        <li><a data-toggle="tooltip" href="https://twitter.com/jeffreyoc/" target="_blank" title="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
+        <li><a data-toggle="tooltip" href="https://www.facebook.com/jeffrey.ocallaghan.73/" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a data-toggle="tooltip" href="https://www.linkedin.com/in/jeffrey-o-callaghan/" target="_blank" title="" data-original-title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        <li><a data-toggle="tooltip" href="https://github.com/ocallaje" target="_blank" title="" data-original-title="GitHub"><i class="fab fa-github"></i></a></li>
+      </ul>
+      <p class="text-center">Copyright &copy; 2023 <a href="index.html">CLS</a>. All Rights Reserved.</p>
+	  <p class="text-2 text-center mb-0">Designed &amp; Developed by <a class="btn-link" target="_blank" href="">Jeffrey O'Callaghan</a>.</p>
+    </div>
+  </footer>
+  <!-- Footer end -->
+  
+</div>
+<!-- Document Wrapper end --> 
+
+<!-- Back To Top --> 
+<a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+
+<!-- JavaScript
+============================ -->
+<script src="assets/vendor/jquery/jquery.min.js"></script> 
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<!-- Highlight JS -->
+<script src="assets/vendor/highlight.js/highlight.min.js"></script> 
+<!-- Easing --> 
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
+<!-- Magnific Popup --> 
+<script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script> 
+<!-- Custom Script -->
+<script src="assets/js/theme.js"></script>
+<!-- Mermaid Script -->
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  </script>
+<!-- Fetch .MD Script -->
+ <script src="githubapi.js"></script>
+<script>
+	const scseq_url =	"https://api.github.com/repos/ocallaje/NF-scRNAseq/contents/README.md";
+	getapi(scseq_url, "md_sc")
+
+	const bulk_url =	"https://api.github.com/repos/thomsonbc/NF-RNAseq/contents/README.md";
+	getapi(bulk_url, "md_bulk")
+	
+	const seq_url =	"https://api.github.com/repos/ocallaje/SeqWorks/contents/README.md";
+	getapi(seq_url, "md_seqworks")
+</script> 
+
+</body>
+</html>
